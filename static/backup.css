@@ -1,0 +1,150 @@
+.icon {
+  position: relative;
+  border-radius: var(--br-41xl);
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.sample-text-sample-text {
+  margin: 0;
+}
+.sample-text-sample-text-sample-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.div1 {
+  position: relative;
+  width: 146px;
+  height: 30px;
+}
+.head,
+.user {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.user {
+  flex: 1;
+  gap: var(--gap-3xs);
+}
+.head {
+  align-self: stretch;
+  background-color: var(--light-gray);
+  height: 57px;
+  flex-shrink: 0;
+  padding: var(--padding-63xl) var(--padding-3xl) var(--padding-63xl)
+    var(--padding-42xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+}
+.child {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+}
+.div3,
+.div4 {
+  align-items: center;
+}
+.div4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 104px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.div3 {
+  flex: 1;
+  background-color: var(--light-gray);
+  display: none;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+}
+.div2,
+.div3,
+.div5 {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.div5 {
+  flex: 1;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+}
+.div2 {
+  align-self: stretch;
+  height: 43px;
+  flex-shrink: 0;
+  padding: var(--padding-39xl) var(--padding-xl);
+  text-align: center;
+  font-size: var(--text-2-size);
+}
+.div13,
+.div2,
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.div13 {
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  width: 192px;
+  flex-direction: row;
+  padding: var(--padding-5xs-5) var(--padding-lg-5);
+}
+.wrapper {
+  border-radius: 8px;
+  background-color: var(--white);
+  width: 564px;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 68px 110px;
+  color: var(--color-gainsboro-100);
+}
+.made-by-mironow {
+  position: relative;
+}
+.div,
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--light-gray);
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-45xl) var(--padding-31xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--text-2-size);
+}
+.div {
+  position: relative;
+  background-color: #efefef;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 11px;
+  text-align: left;
+  font-size: var(--text-4-size);
+  color: var(--color-black);
+  font-family: var(--text-4);
+}

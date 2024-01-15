@@ -1,0 +1,226 @@
+.icon {
+  position: relative;
+  border-radius: var(--br-41xl);
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.sample-text-sample-text {
+  margin: 0;
+}
+.sample-text-sample-text-sample-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.div1 {
+  position: relative;
+  width: 146px;
+  height: 30px;
+}
+.head,
+.user {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.user {
+  flex: 1;
+  gap: var(--gap-3xs);
+}
+.head {
+  align-self: stretch;
+  background-color: var(--light-gray);
+  height: 57px;
+  flex-shrink: 0;
+  padding: var(--padding-63xl) var(--padding-3xl) var(--padding-63xl)
+    var(--padding-42xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+  text-align: left;
+  font-size: var(--text-4-size);
+}
+.child {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+}
+.div3,
+.div4 {
+  align-items: center;
+}
+.div4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 104px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.div3 {
+  flex: 1;
+  background-color: var(--light-gray);
+  display: none;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+}
+.div2,
+.div3,
+.div5 {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.div5 {
+  flex: 1;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+}
+.div2 {
+  height: 43px;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-39xl) var(--padding-xl);
+  box-sizing: border-box;
+}
+.div13,
+.div14,
+.div15,
+.div2 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.div15 {
+  flex: 1;
+  position: relative;
+  justify-content: center;
+}
+.div13,
+.div14 {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.div14 {
+  flex: 1;
+  background-color: var(--light-gray);
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+}
+.div13 {
+  height: 47px;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-xl);
+  box-sizing: border-box;
+}
+.b {
+  position: relative;
+}
+.div23 {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs) 0;
+}
+.div22,
+.div23 {
+  align-items: center;
+  justify-content: flex-start;
+}
+.div22,
+.div48 {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.div48,
+.div75,
+.div76,
+.div79 {
+  align-items: center;
+  justify-content: center;
+}
+.div76 {
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-10xs-5) var(--padding-5xs);
+}
+.div75,
+.div79 {
+  display: flex;
+}
+.div75 {
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 72px;
+  height: 39px;
+  flex-direction: column;
+}
+.div79 {
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  flex-direction: row;
+  padding: var(--padding-10xs-5) var(--padding-5xs);
+}
+.div74,
+.parent {
+  justify-content: flex-start;
+}
+.div74 {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--text-4-size);
+  color: var(--color-gainsboro-100);
+}
+.parent {
+  flex-direction: row;
+  gap: var(--gap-3xs);
+  text-align: left;
+}
+.div,
+.footer,
+.parent {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--light-gray);
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-45xl) var(--padding-31xl);
+  box-sizing: border-box;
+}
+.div {
+  position: relative;
+  background-color: #efefef;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 11px;
+  text-align: center;
+  font-size: var(--header-5-size);
+  color: var(--color-black);
+  font-family: var(--header-5);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+
+    <link rel="stylesheet" href="/static/global_auth.css"/>
+    <link rel="stylesheet" href="/static/auth.css"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <script>
+        function foo() {
+            alert("переход на страницу")
+        }
+    </script>
+
+</head>
+<body>
+<div class="div">
+    <div class="parent">
+        <b class="b">
+            <p class="p">Вход в систему</p>
+        </b>
+        <div class="group">
+            <div class="div1">
+                <div class="made-by-mironow">Логин: <input type="text" id="login" style="border:none; outline: none"/>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="made-by-mironow">Пароль: <input type="password" id="password"
+                                                            style="border:none; outline: none"/></div>
+            </div>
+        </div>
+        <button class="div5" onclick="location.href='/add_client'">
+            <div class="made-by-mironow">Войти</div>
+        </button>
+    </div>
+    <div class="footer">
+        <div class="made-by-mironow">Made by MironoW</div>
+        <div class="made-by-mironow">
+            Курсовая работа по предмету ”Базы Данных”
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+.icon {
+  position: relative;
+  border-radius: var(--br-41xl);
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.sample-text-sample-text {
+  margin: 0;
+}
+.sample-text-sample-text-sample-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.div1 {
+  position: relative;
+  width: 146px;
+  height: 30px;
+}
+.head,
+.user {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.user {
+  flex: 1;
+  gap: var(--gap-3xs);
+}
+.head {
+  align-self: stretch;
+  background-color: var(--light-gray);
+  height: 57px;
+  flex-shrink: 0;
+  padding: var(--padding-63xl) var(--padding-3xl) var(--padding-63xl)
+    var(--padding-42xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+  text-align: left;
+  font-size: var(--text-4-size);
+}
+.child {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+}
+.div3,
+.div4 {
+  align-items: center;
+}
+.div4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 104px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.div3 {
+  flex: 1;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.div15,
+.div2,
+.div5 {
+  display: flex;
+  align-items: center;
+}
+.div5 {
+  flex: 1;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.div15,
+.div2 {
+  justify-content: center;
+}
+.div2 {
+  align-self: stretch;
+  height: 43px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-39xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.div15 {
+  flex: 1;
+  position: relative;
+  height: 30px;
+}
+.div13 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-3xs);
+}
+.b {
+  position: relative;
+}
+.div18,
+.div19 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div19 {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-black);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-3xs) 0;
+}
+.div18 {
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.div124 {
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-12xs);
+}
+.div124,
+.div126,
+.wrapper {
+  align-items: center;
+  justify-content: center;
+}
+.div126 {
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-12xs);
+}
+.wrapper {
+  display: none;
+  flex-direction: column;
+  padding: 0 var(--padding-7xs);
+}
+.div123 {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 39px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-7xs);
+}
+.container,
+.div122,
+.div123,
+.div129 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div129 {
+  border-radius: var(--br-8xs);
+  background-color: var(--gray-1);
+  border: 1px solid var(--gray-1);
+  flex-direction: row;
+  padding: var(--padding-12xs);
+}
+.container,
+.div122 {
+  flex-direction: column;
+}
+.container {
+  padding: 0 var(--padding-7xs);
+}
+.div122 {
+  flex-shrink: 0;
+  font-size: var(--text-4-size);
+  color: var(--color-gainsboro-100);
+}
+.parent {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  text-align: left;
+}
+.div,
+.footer,
+.parent {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--light-gray);
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-45xl) var(--padding-31xl);
+  box-sizing: border-box;
+}
+.div {
+  position: relative;
+  background-color: #efefef;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 11px;
+  text-align: center;
+  font-size: var(--header-5-size);
+  color: var(--color-black);
+  font-family: var(--header-5);
+}

@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+
+  /* font sizes */
+  --text-2-size: 16px;
+  --text-4-size: 12px;
+  --header-2-size: 32px;
+
+  /* Colors */
+  --light-gray: #dedede;
+  --color-gainsboro-100: #d9d9d9;
+  --color-black: #000;
+  --white: #fff;
+  --gray-1: #979797;
+
+  /* Paddings */
+  --padding-31xl: 50px;
+  --padding-45xl: 64px;
+  --padding-5xs-5: 7.5px;
+  --padding-lg-5: 18.5px;
+  --padding-5xs: 8px;
+  --padding-mini: 15px;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+}
