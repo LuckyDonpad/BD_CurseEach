@@ -19,14 +19,20 @@ from django.urls import path
 from website.views import *
 
 urlpatterns = [
+    path('logout', logout_view, name="logout"),
+    path('', auth, name="auth"),
     path('admin/', admin.site.urls),
-    path('auth', auth),
-    path('add_client', add_client),
-    path('backup', backup),
-    path('create_task', create_task),
-    path('manage_tasks', manage_tasks),
-    path('current_tasks', failed_tasks),
-    path('view_client', view_client),
-    path('view_worker', view_worker),
-    path('add_worker', add_worker),
+    path('auth/', auth, name="auth"),
+    path('add_client/', add_client),
+    path('backup/', backup),
+    path('create_task/', create_task),
+    path('current_tasks/', current_tasks),
+    path('view_client/', view_client),
+    path('view_worker/', view_worker),
+    path('add_worker/', add_worker),
+    path('failed_tasks/', failed_tasks),
+    path('change_worker/<pk>', change_worker),
+    path('change_client/<pk>', change_client),
+    path('change_task/<pk>', change_task),
+
 ]

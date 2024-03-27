@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
 
-    <link rel="stylesheet" href="/static/add_client_global.css" />
-    <link rel="stylesheet" href="/static/add_client_index.css" />
+    <link rel="stylesheet" href="/static/add_client_global.css"/>
+    <link rel="stylesheet" href="/static/add_client_index.css"/>
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
     />
-  </head>
-  <body>
-    <div class="div">
-      <div class="head">
+</head>
+<body>
+<div class="div">
+    <div class="head">
         <div class="user">
-          <img class="icon" alt="" src="/static/icon@2x.png" />
+            <img class="icon" alt="" src="/static/icon@2x.png"/>
 
-          <div class="div1">
-            <div class="sample-text-sample-text-sample-container">
-              <p class="sample-text-sample-text">Sample_text Sample_text</p>
-              <p class="sample-text-sample-text">Sample_text Sample_text</p>
+            <div class="div1">
+                <button class="sample-text-sample-text-sample-container" onclick="location.href='/logout'">
+                    <p class=" sample-text-sample-text">Выход</p>
+                </button>
             </div>
-          </div>
         </div>
-        <img class="icon" alt="" src="/static/icon@2x.png" />
-      </div>
-      <div class="div2">
+        <img class="icon" alt="" src="/static/icon@2x.png"/>
+    </div>
+    <div class="div2">
         <div class="div3">
-          <img class="child" alt="" />
+            <img class="child" alt=""/>
 
-          <div class="div4">Задачи</div>
+            <div class="div4">Задачи</div>
         </div>
         <button class="div5" onclick="location.href='/view_client'">
-          <img class="child" alt="" src="/static/ellipse-1@2x.png" />
+            <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-          <div class="div4">Клиенты</div>
+            <div class="div4">Клиенты</div>
         </button>
         <button class="div5" onclick="location.href='/view_worker'">
-          <img class="child" alt="" src="/static/ellipse-1@2x.png" />
+            <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-          <div class="div4">Сотрудники</div>
+            <div class="div4">Сотрудники</div>
         </button>
         <button class="div5" onclick="location.href='/backup'">
-          <img class="child" alt="" src="/static/ellipse-1@2x.png" />
+            <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-          <div class="div4">Бэкап</div>
+            <div class="div4">Экспорт</div>
         </button>
-        <button  class="div5" onclick="location.href='/current_tasks'">
-          <img class="child" alt="" src="/static/ellipse-1@2x.png" />
+        <button class="div5" onclick="location.href='/current_tasks'">
+            <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-          <div class="div4">Задачи</div>
+            <div class="div4">Задачи</div>
         </button>
-      </div>
-      <div class="parent">
-        <b class="b">Регистрация нового клиента</b>
-        <div class="group">
-          <div class="div13">
-            <div class="made-by-mironow">Фамилия</div>
+    </div><!--
+        <div class="parent">
+          <b class="b">Регистрация нового клиента</b>
+          <div class="group">
+            <div class="div13">
+              <div class="made-by-mironow">Фамилия</div>
+            </div>
+            <div class="div13">
+              <div class="made-by-mironow">Имя</div>
+            </div>
+            <div class="div13">
+              <div class="made-by-mironow">Отчество</div>
+            </div>
+            <div class="div13">
+              <div class="made-by-mironow">Номер телефона</div>
+            </div>
           </div>
-          <div class="div13">
-            <div class="made-by-mironow">Имя</div>
-          </div>
-          <div class="div13">
-            <div class="made-by-mironow">Отчество</div>
-          </div>
-          <div class="div13">
-            <div class="made-by-mironow">Номер телефона</div>
-          </div>
-        </div>
-        <div class="div21">
-          <div class="made-by-mironow">Добавить</div>
-        </div>
-      </div>
-      <div class="div23">
-        <button class="div5" onclick="location.href='/view_client'">
-          <img class="child" alt="" src="/static/ellipse-1@2x.png" />
+          <div class="div21">
+            <div class="made-by-mironow">Добавить</div>
+          </div>-->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>
+            <button type="submit">Добавить</button>
+        </p>
+    </form>
+</div>
+<div class="div23">
+    <button class="div5" onclick="location.href='/view_client'">
+        <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-          <div class="div25">Просмотр и редактирование</div>
-        </button>
-        <button class="div5" onclick="location.href='/add_client'">
-          <img class="child" alt="" src="/static/ellipse-1@2x.png" />
+        <div class="div25">Просмотр и редактирование</div>
+    </button>
+    <button class="div5" onclick="location.href='/add_client'">
+        <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-          <div class="div25">Добавить клиента</div>
-        </button>
-      </div>
-      <div class="footer">
-        <div class="made-by-mironow">Made by MironoW</div>
-        <div class="made-by-mironow">
-          Курсовая работа по предмету ”Базы Данных”
-        </div>
-      </div>
+        <div class="div25">Добавить клиента</div>
+    </button>
+</div>
+<div class="footer">
+    <div class="made-by-mironow">Made by MironoW</div>
+    <div class="made-by-mironow">
+        Курсовая работа по предмету ”Базы Данных”
     </div>
-  </body>
+</div>
+</div>
+</body>
 </html>

@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="div">
-    <div class="parent">
+    <!--<div class="parent">
         <b class="b">
             <p class="p">Вход в систему</p>
         </b>
@@ -35,7 +35,13 @@
         </div>
         <button class="div5" onclick="location.href='/add_client'">
             <div class="made-by-mironow">Войти</div>
-        </button>
+        </button>-->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><button type="submit">Войти</button> </p>
+
+    </form>
     </div>
     <div class="footer">
         <div class="made-by-mironow">Made by MironoW</div>

@@ -4,8 +4,8 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
 
-    <link rel="stylesheet" href="/static/current_tasks_global.css"/>
-    <link rel="stylesheet" href="/static/current_tasks.css"/>
+    <link rel="stylesheet" href="../../../static/add_worker_global.css"/>
+    <link rel="stylesheet" href="../../../static/add_worker.css"/>
     <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -19,7 +19,7 @@
 
              <div class="div1">
                 <button class="sample-text-sample-text-sample-container" onclick="location.href='/logout'">
-                   <p class=" sample-text-sample-text">Выход</p>
+                    <<p class=" sample-text-sample-text">Выход</p>
                 </button>
             </div>
         </div>
@@ -53,54 +53,30 @@
         </button>
     </div>
     <div class="div13">
-        <button class="div14" onclick="location.href='/current_tasks'">
+        <button class="div5" onclick="location.href='/add_worker'">
             <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-            <div class="div15">Текущие</div>
+            <div class="div15">Добавить сотрудника</div>
         </button>
-        <button class="div14" onclick="location.href='/failed_tasks'">
+        <button class="div5" onclick="location.href='/view_worker'">
             <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
-            <div class="div15">Проваленные</div>
-        </button>
-
-        </button>
-        <button class="div14" onclick="location.href='/create_task'">
-            <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
-
-            <div class="div15">Создать</div>
+            <div class="div15">Удалить сотрудника</div>
         </button>
     </div>
     <div class="parent">
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Задача</th>
-                <th>Дэдлайн</th>
-            </tr>
-            {% for task in tasks %}
-                <tr>
-                    <td>{{ task.id }}</td>
-                    <td>{{ task.name }}</td>
-                    <td>{{ task.end_date }}</td>
-                    <td>
-                        <form action="" method="get">
-                            <button class="btn btn-default" name="DoneButton" value="{{ task.id }}">Выполнить</button>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" method="get">
-                            <button class="btn btn-default" name="ChangeButton" value="{{ task.id }}">Change</button>
-                        </form>
-                    </td>
-                </tr>
-            {% endfor client in clients %}
-        </table>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p>
+                <button type="submit">Редактировать</button>
+            </p>
+            <div class="footer">
+                <div class="made-by-mironow">Made by MironoW</div>
+                <div class="made-by-mironow">
+                    Курсовая работа по предмету ”Базы Данных”
+                </div>
+            </div>
     </div>
-    <div class="footer">
-        <div class="b">Made by MironoW</div>
-        <div class="b">Курсовая работа по предмету ”Базы Данных”</div>
-    </div>
-</div>
 </body>
 </html>

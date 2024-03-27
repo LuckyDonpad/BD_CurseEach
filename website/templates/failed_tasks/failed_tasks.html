@@ -4,8 +4,8 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
 
-    <link rel="stylesheet" href="/static/current_tasks_global.css"/>
-    <link rel="stylesheet" href="/static/current_tasks.css"/>
+    <link rel="stylesheet" href="/static/failed_tasks_global.css"/>
+    <link rel="stylesheet" href="/static/failed_tasks.css"/>
     <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -19,7 +19,7 @@
 
              <div class="div1">
                 <button class="sample-text-sample-text-sample-container" onclick="location.href='/logout'">
-                   <p class=" sample-text-sample-text">Выход</p>
+                    <p class=" sample-text-sample-text">Выход</p>
                 </button>
             </div>
         </div>
@@ -64,7 +64,6 @@
             <div class="div15">Проваленные</div>
         </button>
 
-        </button>
         <button class="div14" onclick="location.href='/create_task'">
             <img class="child" alt="" src="/static/ellipse-1@2x.png"/>
 
@@ -85,7 +84,7 @@
                     <td>{{ task.end_date }}</td>
                     <td>
                         <form action="" method="get">
-                            <button class="btn btn-default" name="DoneButton" value="{{ task.id }}">Выполнить</button>
+                            <button class="btn btn-default" name="DeleteButton" value="{{ task.id }}">Delete</button>
                         </form>
                     </td>
                     <td>
